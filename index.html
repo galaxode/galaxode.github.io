@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class='container profile-container'>
+    <div class='row profile'>
+      <div class='col-3 profile-pic-container'>
+        <img class='profile-pic' src='./assets/img/alaska-portrait.jpg'>
+      </div>
+      <div class='col-9 profile-title'>
+        <h1>Andrew Cookro</h1>
+        <p>Hello! I am a software engineer living in Brooklyn.  I build web and mobile apps in React, React-Native, or Angular 4.  I speak Japanese and currently I'm learning to speak Spanish and play the guitar.  I'm interested in productivity tools, educational games, adaptive learning, and data visualization.  I'm also a nature fanatic.</p>
+      </div>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row projects'>
+      <div class='col-6 project-1'>
+        <video width='100%' controls controlsList="nodownload" poster='./assets/img/trailangel-screenshot.png'>
+        <source src='./assets/vid/trailangel-demo2.mov' type="video/mp4">
+        Sorry, your browser doesn't support embedded videos,
+        but don't worry, you can <a href="./assets/vid/trailangel-demo2.mov">download it</a>
+        and watch it with your favorite video player!
+        </video>
+        <!-- <img (click)='projectClick($event)' class='screenshot' src='../assets/img/trailangel-screenshot.png'> -->
+      </div>
+      <div class='col-6 project-2'>
+        <a href="https://github-memory-game.herokuapp.com/">
+          <img width='75%' src='./assets/img/found-match.png'>
+        </a>
+      </div>
+      <!-- <div class='col-4 project-3'>
+        <img width='100%' src='../assets/img/trailangel-screenshot.png'>
+      </div> -->
+    </div>
+  </div>
+</body>
+</html>
