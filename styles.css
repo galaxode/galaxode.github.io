@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  background-color: #c7cacd;
+}
+
 
 .container {
   margin: 0 auto;
@@ -79,8 +86,9 @@
 .profile-container {
   /*background-color: #c2d6d6; gray with bluish tint */
   background-color: #c7cacd;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
 }
 
 .profile {
@@ -107,18 +115,115 @@
   overflow: auto;
   padding: 5px;
 }
+#portfolio {
+  background-color: white;
+  padding-bottom: 4%;
+  padding-top: 2%;
+
+}
 .projects > div {
-  padding: 20px;
+  padding: 60px;
+  z-index: 999;
+}
+.projects > h2 {
+  display: flex;
+  justify-content: center;
 }
 .project-2 > a img {
   display: block;
   margin: 0 auto;
+  width: 87%;
 }
+.project-2 > img {
+  width: 87%;
+}
+
 .screenshot {
   width: 100%;
 }
 .screenshot:hover {
   opacity: 0.7;
+}
+footer {
+  /*background-color: #c7cacd;*/
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+}
+footer p {
+  letter-spacing: 0.16em;
+}
+#copyright, #email {
+  display: flex;
+  justify-content: center;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+
+#social {
+    position: absolute;
+    bottom: 40px;
+    z-index: 9999;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    list-style: none;
+    padding-left: 0;
+}
+
+#social li {
+  float: left;
+}
+
+#social li a {
+  float: left;
+  margin-right: 30px;
+  transition: all .25s ease-in;
+  -webkit-transition: all .25s ease-in;
+  display: block;
+}
+
+#social #linkedin a {
+  width: 40px;
+  margin-top: 2px;
+
+}
+
+#social #github a {
+  margin-right: 0;
+  width: 45px;
+}
+
+#social img {
+  transition: all .25s ease-in;
+  -webkit-transition: all .25s ease-in;
+  width: 100%;
+  opacity: .7;
+}
+
+#social a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+#social a:hover img {
+  opacity: 1;
+}
+
+#social-media-circle {
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  z-index: 99;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  left: 50%;
+  bottom: 33px;
 }
 /*video::-internal-media-controls-download-button {
     display:none;
@@ -146,5 +251,22 @@ video::-webkit-media-controls-panel {
   }
   .projects > div {
     width: 100%;
+    padding: 20px;
+  }
+  #copyright, #email {
+  font-size: 0.75em;
+  }
+  #social-media-circle {
+    height: 90px;
+    width: 90px;
+    bottom: 26px;
+  }
+  #social {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #social-media-circle {
+    display: none;
   }
 }

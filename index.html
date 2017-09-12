@@ -15,31 +15,68 @@
         <img class='profile-pic' src='./assets/img/alaska-portrait.jpg'>
       </div>
       <div class='col-9 profile-title'>
-        <h1>Andrew Cookro</h1>
-        <p>Hello! I am a software engineer living in Brooklyn.  I build web and mobile apps in React, React-Native, or Angular 4.  I speak Japanese and currently I'm learning to speak Spanish and play the guitar.  I'm interested in productivity tools, educational games, adaptive learning, and data visualization.  I'm also a nature fanatic.</p>
+        <h1>andrew cookro</h1>
+        <p>Hello! I am a software engineer living in Brooklyn.  I build web and mobile apps in React, Angular, React-Native, or Swift.  My interests are wide and varied.  They include productivity tools, educational games, adaptive learning, and data visualization.  I speak Japanese and I'm currently learning to speak Spanish.    When I'm not in front of my computer, I spend time hiking, learning the guitar, or obsessively buying houseplants.</p>
       </div>
     </div>
   </div>
-  <div class='container'>
-    <div class='row projects'>
-      <div class='col-6 project-1'>
-        <video width='100%' controls controlsList="nodownload" poster='./assets/img/trailangel-screenshot.png'>
-        <source src='./assets/vid/trailangel-demo2.mov' type="video/mp4">
-        Sorry, your browser doesn't support embedded videos,
-        but don't worry, you can <a href="./assets/vid/trailangel-demo2.mov">download it</a>
-        and watch it with your favorite video player!
-        </video>
-        <!-- <img (click)='projectClick($event)' class='screenshot' src='../assets/img/trailangel-screenshot.png'> -->
+
+  <!-- Portfolio -->
+  <section id='portfolio'>
+    <div class='container'>
+      <div class='row projects'>
+        <div class='col-6 project-1'>
+          <h3>TrailAngel</h3>
+          <p>an iOS first mobile app in React-Native, Redux, and Node</p>
+          <video width='100%' controls controlsList="nodownload" poster='./assets/img/trailangel-screenshot.png'>
+          <source src='./assets/vid/trailangel-demo2.mov' type="video/mp4">
+          Sorry, your browser doesn't support embedded videos,
+          but don't worry, you can <a href="./assets/vid/trailangel-demo2.mov">download it</a>
+          and watch it with your favorite video player!
+          </video>
+          <!-- <img (click)='projectClick($event)' class='screenshot' src='../assets/img/trailangel-screenshot.png'> -->
+        </div>
+        <div class='col-6 project-2'>
+          <h3>GitHub Memory Match</h3>
+          <p>a memory matching game built with React interfacing with GitHub API</p>
+          <a href="https://github-memory-game.herokuapp.com/" target="_blank">
+            <img class='screenshot' src='./assets/img/found-match.png'>
+          </a>
+        </div>
+        <!-- <div class='col-4 project-3'>
+          <img width='100%' src='../assets/img/trailangel-screenshot.png'>
+        </div> -->
       </div>
-      <div class='col-6 project-2'>
-        <a href="https://github-memory-game.herokuapp.com/">
-          <img width='75%' src='./assets/img/found-match.png'>
-        </a>
-      </div>
-      <!-- <div class='col-4 project-3'>
-        <img width='100%' src='../assets/img/trailangel-screenshot.png'>
-      </div> -->
     </div>
-  </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6' id='copyright'>
+          <p>©2017 Andrew Cookro</p>
+        </div>
+        <div class='col-6' id='email'>
+          <p>
+            <a href="mailto:andrew.cookro@gmail.com">andrew.cookro@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="social-media-circle"></div>
+
+    <ul id="social">
+      <li id="linkedin">
+        <a href="http://linkedin.com/in/andrew-cookro" target="_blank"><img src="./assets/img/linkedin-rect.svg"></a>
+      </li>
+      <li id="github">
+        <a href="http://github.com/galaxode" target="_blank"><img src="./assets/img/github.svg"></a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
