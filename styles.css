@@ -1,5 +1,5 @@
 * {
-  /*border: 0.5px solid red !important;*/
+  /*border: 0.1px solid red !important;*/
 }
 
 * {
@@ -55,7 +55,7 @@ body {
 }
 
 .col-6 {
-  width: 49%;
+  width: 50%;
 }
 
 .col-7 {
@@ -79,7 +79,7 @@ body {
 }
 
 .col-12 {
-  width: 99%;
+  width: 100%;
 }
 
 /*Profile Styles*/
@@ -129,14 +129,14 @@ body {
   display: flex;
   justify-content: center;
 }
-.project-2 > a img {
+.project-2 > a  {
   display: block;
   margin: 0 auto;
   width: 87%;
 }
-.project-2 > img {
+/*.project-2 > img {
   width: 87%;
-}
+}*/
 
 .screenshot {
   width: 100%;
