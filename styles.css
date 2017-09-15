@@ -117,7 +117,7 @@ body {
 }
 #portfolio {
   background-color: white;
-  padding-bottom: 4%;
+  padding-bottom: 6%;
   padding-top: 2%;
 
 }
@@ -165,7 +165,7 @@ a:link {
 
 #social {
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     z-index: 9999;
     left:50%;
     transform: translateX(-50%);
@@ -189,11 +189,10 @@ a:link {
 #social #linkedin a {
   width: 40px;
   margin-top: 2px;
-
+  margin-right: 0;
 }
 
 #social #github a {
-  margin-right: 0;
   width: 45px;
 }
 
@@ -223,7 +222,7 @@ a:link {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   left: 50%;
-  bottom: 33px;
+  bottom: 48px;
 }
 /*video::-internal-media-controls-download-button {
     display:none;
@@ -259,7 +258,7 @@ video::-webkit-media-controls-panel {
   #social-media-circle {
     height: 90px;
     width: 90px;
-    bottom: 26px;
+    bottom: 33px;
   }
   #social {
     display: none;
