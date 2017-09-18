@@ -1,8 +1,6 @@
-* {
-  /*border: 0.1px solid red !important;*/
-}
 
 * {
+    /*border: 0.1px solid red !important;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -16,10 +14,10 @@ body {
   background-color: #c7cacd;
 }
 
+/* Responsive Grid */
 
 .container {
   margin: 0 auto;
-  /*max-width: 1200px;*/
   width: 100%;
 }
 
@@ -82,7 +80,8 @@ body {
   width: 100%;
 }
 
-/*Profile Styles*/
+/* Profile Styles */
+
 .profile-container {
   /*background-color: #c2d6d6; gray with bluish tint */
   background-color: #c7cacd;
@@ -94,16 +93,15 @@ body {
 .profile {
   width: 80%;
   margin: 0 auto;
-  /*margin-bottom: 45px;
-  margin-top: 10px;*/
-
 }
+
 .profile-pic-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
+
 .profile-pic {
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
@@ -111,57 +109,64 @@ body {
   width: 70%;
   margin: 10px;
 }
+
 .profile-title {
   overflow: auto;
   padding: 5px;
 }
+
 #portfolio {
   background-color: white;
   padding-bottom: 6%;
   padding-top: 2%;
-
 }
+
 .projects > div {
   padding: 60px;
   z-index: 999;
 }
+
 .projects > h2 {
   display: flex;
   justify-content: center;
 }
+
 .project-2 > a  {
   display: block;
   /*margin: 0 auto;*/
   width: 87%;
 }
-.project-2 > a img {
-  /*width: 87%;*/
-}
 
 .screenshot {
   width: 100%;
 }
+
 .screenshot:hover {
   opacity: 0.7;
 }
+
+/* Footer */
+
 footer {
   /*background-color: #c7cacd;*/
   padding-top: 1%;
   padding-bottom: 1%;
   position: relative;
 }
+
 footer p {
   letter-spacing: 0.16em;
 }
+
 #copyright, #email {
   display: flex;
   justify-content: center;
 }
+
 a:link {
   color: black;
   text-decoration: none;
 }
-
 
 #social {
     position: absolute;
@@ -224,46 +229,43 @@ a:link {
   left: 50%;
   bottom: 48px;
 }
-/*video::-internal-media-controls-download-button {
-    display:none;
-}
 
-video::-webkit-media-controls-enclosure {
-    overflow:hidden;
-}
-
-video::-webkit-media-controls-panel {
-    width: calc(100% + 30px);
-}*/
+/* Media Queries */
 
 @media only screen and (max-width: 700px) {
   .profile {
     width: 100%;
     padding: 20px;
   }
+
   .profile-pic {
     display: none;
   }
+
   .profile-title {
     width: 100%;
-
   }
+
   .projects > div {
     width: 100%;
     padding: 20px;
   }
+
   #copyright, #email {
   font-size: 0.75em;
   }
+
   #social-media-circle {
     height: 90px;
     width: 90px;
     bottom: 33px;
   }
+
   #social {
     display: none;
   }
 }
+
 @media only screen and (max-width: 500px) {
   #social-media-circle {
     display: none;
