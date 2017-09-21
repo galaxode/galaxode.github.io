@@ -1,4 +1,5 @@
 
+
 * {
     /*border: 0.1px solid red !important;*/
   -webkit-box-sizing: border-box;
@@ -80,13 +81,136 @@ body {
   width: 100%;
 }
 
+/* Nav */
+
+.nav-container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+header {
+  /*background: #E54B4B;*/
+  background: black;
+  padding: 1em 0;
+  position: relative;
+  /*color: #C7CACD;*/
+  color: white;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/*header a:link {
+  color: white;
+}*/
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: upppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.nav-menu {
+  position: absolute;
+  background: #464655;
+  top: 100%;
+  right: 0%;
+  overflow: hidden;
+  height: 0px;
+}
+
+.nav-menu--open {
+  height: auto;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid #575766;
+}
+
+.nav-menu li:last-child {
+  border-bottom: none;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 2em 6em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-menu a:link, .nav-menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  background: #7eccc4;
+
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
 /* Profile Styles */
 
 .profile-container {
   /*background-color: #c2d6d6; gray with bluish tint */
-  background-color: #c7cacd;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  background-color: #C7CACD;
+  padding-bottom: 20%;
+  padding-top: 15%;
 
 }
 
@@ -115,6 +239,10 @@ body {
   padding: 5px;
 }
 
+.profile-title p {
+  font-size: 1.25em;
+}
+
 #portfolio {
   background-color: white;
   padding-bottom: 6%;
@@ -124,6 +252,10 @@ body {
 .projects > div {
   padding: 60px;
   z-index: 999;
+}
+
+.projects p {
+  font-size: 1.15em;
 }
 
 .projects > h2 {
@@ -149,8 +281,8 @@ body {
 
 footer {
   /*background-color: #c7cacd;*/
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   position: relative;
 }
 
@@ -232,6 +364,31 @@ a:link {
 
 /* Media Queries */
 
+@media only screen and (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav-menu {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+  }
+  .nav-menu li {
+    display: inline-block;
+    border: none;
+  }
+  .nav-menu a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  .nav-menu a:hover,
+  .nav-menu a:focus {
+    background: transparent;
+    color: #7eccc4;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .profile {
     width: 100%;
@@ -251,14 +408,18 @@ a:link {
     padding: 20px;
   }
 
-  #copyright, #email {
-  font-size: 0.75em;
+  footer {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
+
+
   #social-media-circle {
-    height: 90px;
-    width: 90px;
-    bottom: 33px;
+    /*height: 100px;
+    width: 100px;
+    bottom: 100px;*/
+    display: none;
   }
 
   #social {
@@ -269,5 +430,13 @@ a:link {
 @media only screen and (max-width: 500px) {
   #social-media-circle {
     display: none;
+  }
+
+  #copyright {
+    display: none;
+  }
+
+  #email {
+  margin: 0 auto;
   }
 }

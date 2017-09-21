@@ -4,15 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  <!-- Check this meta tag to see if needed -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">﻿ -->
   <title>Andrew Cookro | Software Engineer</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Header -->
+
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">andrew<span>cookro<span></h1>
+
+      <nav class="nav-menu">
+        <ul>
+          <!-- <li><a href="#">Home</a></li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Connect</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+    </div>
+  </header>
+
   <!-- Bio -->
 
-  <div class='container profile-container'>
+  <div class='container profile-container' id='about'>
     <div class='row profile'>
       <div class='col-3 profile-pic-container'>
         <img class='profile-pic' src='./assets/img/alaska-portrait.jpg'>
@@ -56,7 +81,7 @@
 
   <!-- Footer -->
 
-  <footer>
+  <footer id='contact'>
     <div class='container'>
       <div class='row'>
         <div class='col-6' id='copyright'>
@@ -82,5 +107,6 @@
     </ul>
   </footer>
 
+<script src="index.js"></script>
 </body>
 </html>
