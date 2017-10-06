@@ -83,18 +83,13 @@ body {
 
 /* Nav */
 
-.nav-container {
-  margin: 0 auto;
-  width: 95%;
-}
-
 header {
-  /*background: #E54B4B;*/
   background: black;
-  padding: 1em 0;
-  position: relative;
-  /*color: #C7CACD;*/
+  padding: 1em 1em;
+  position: fixed;
+  width: 100%;
   color: white;
+  z-index: 9999;
 }
 
 header::after {
@@ -103,9 +98,10 @@ header::after {
   display: block;
 }
 
-/*header a:link {
-  color: white;
-}*/
+.nav-container {
+  margin: 0 auto;
+  width: 95%;
+}
 
 .logo {
   float: left;
@@ -158,10 +154,8 @@ header::after {
   text-decoration: none;
 }
 
-.nav-menu a:hover,
-.nav-menu a:focus {
+.nav-menu a:hover, .nav-menu a:focus {
   background: #7eccc4;
-
 }
 
 .menu-toggle {
