@@ -1,12 +1,13 @@
-// Click handler for menu
+
+/* Click handler for menu hamburger icon for small screens */
 
   $('.menu-toggle').click(function() {
     $('.nav-menu').toggleClass('nav-menu--open', 500);
     $(this).toggleClass('open');
-  })
+  });
 
 
-// Smooth Scrolling
+/* Smooth Navigation Scrolling */
 
   // Select all links with hashes
 $('a[href*="#"]')
@@ -28,6 +29,9 @@ $('a[href*="#"]')
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        // Close the dropdown menu at the same time
+        $('.nav-menu').removeClass('nav-menu--open', 500);
+        $('.menu-toggle').removeClass('open');
         return false;
       }
     }
